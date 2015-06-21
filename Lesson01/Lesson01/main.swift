@@ -16,7 +16,7 @@ print("are ");
 print("you?");
 
 let i:Int = -25;
-println("the value of i is \(i).");
+println("the value of i is \(i+1).");
 
 var firstName = "Elad";
 var lastName = "Lavi";
