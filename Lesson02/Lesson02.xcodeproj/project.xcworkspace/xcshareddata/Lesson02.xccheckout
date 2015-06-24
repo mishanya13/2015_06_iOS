@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D5B71227-8E80-45EF-B38C-F331EE583532</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Lesson02</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1E8BAC448781C7EE49720AE4C131CCC1BF3D6F11</key>
 		<string>https://github.com/eladlavi/2015_06_iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Lesson02/Lesson02.xcodeproj/project.xcworkspace</string>
+	<string>Lesson02/Lesson02.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1E8BAC448781C7EE49720AE4C131CCC1BF3D6F11</key>
