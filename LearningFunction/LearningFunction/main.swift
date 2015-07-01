@@ -141,16 +141,46 @@ func largestDigit(x: Int)->Int{
     return result;
 }
 
-func reverseDigits(x: Int){
-    
+func reverseDigits(x: Int)->Int{
+    var result = 0;
+    var temp = x;
+    while(temp != 0){
+        let lastDigit = temp%10;
+        temp /= 10;
+        
+        
+        result = result*10 + lastDigit;
+    }
+    return result;
 }
 
-println(largestDigit(131));
+//var myNumbers = [1,3,7,2];
+var myNumbers = [1,3,2,7];
 
 
+func sortNumbers(var someNumbers: [Int])->[Int]{
+    someNumbers[0] = 40;
+    
+    
+    var limit = someNumbers.count - 1;
+    var isSorted = false;
+    while(!isSorted){
+        isSorted = true;
+        for var i=0; i < limit; i++ {
+            if someNumbers[i] > someNumbers[i+1]{
+                let temp = someNumbers[i];
+                someNumbers[i] = someNumbers[i+1];
+                someNumbers[i+1] = temp;
+                isSorted = false;
+            }
+        }
+        limit--;
+    }
+    
+    return someNumbers;
+}
 
-
-
+sortNumbers(myNumbers);
 
 
 
