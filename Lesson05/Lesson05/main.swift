@@ -62,6 +62,12 @@ struct Rectangle {
     func description() ->String{
         return "x: \(x), y: \(y), width: \(width), height:\(height)";
     }
+    
+    static var shapeType:String{
+        return "polygon";
+    }
+    
+    static var numberOfRectangles:Int = 0;
 }
 
 
@@ -77,6 +83,9 @@ rect.height = 50;
 var rect2 = rect;
 rect2.x = 19;
 
+
+println("shapeType: \(Rectangle.shapeType)");
+println("number of rectangles: \(Rectangle.numberOfRectangles)");
 //println(rect2.description());
 
 class Person {
@@ -94,7 +103,7 @@ class Person {
         }
     };
     
-    private var gender:Int = 2;
+    private var gender:Int = 0;
     
     func setGender(gen:Int){
         println("gender is about to be changed");
@@ -109,7 +118,9 @@ class Person {
             return _lastName;
         }
         set{
+            //..before
             _lastName = newValue;
+            //..after
             
         }
     }
@@ -131,6 +142,16 @@ class Person {
     func description()->String{
         return "My name is \(self.name), I'm \(self._age) years old";
     }
+    
+    
+    static var species:String{
+        return "Homo sapiens";
+        
+    }
+    
+    static var numberOfPersons:Int = 0;
+    
+    
 }
 
 var p = Person();
@@ -151,4 +172,6 @@ if (p === p2){
 }
 
 p.email = "barak@barak.com";
-
+println("\(Person.species)");
+Person.numberOfPersons++;
+println("number of persons \(Person.numberOfPersons)");
